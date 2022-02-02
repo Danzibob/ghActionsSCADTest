@@ -18,7 +18,7 @@ FIN_POINTS = [
 // Other
 SLOT_HEIGHT = 5;
 RING_THICKNESS = 6;
-NUM_FINS = 3;
+NUM_FINS = 4;
 
 // Creates a 3d single fin on the xy plane aligned to 0,0
 module Fin(){
@@ -104,6 +104,6 @@ module TopRing(){
     }
 }
 
-*projection() rotate(45, [0,0,1]) Ring();
+projection() rotate(45, [0,0,1]) Ring();
 
-TopRing();
+*TopRing();
